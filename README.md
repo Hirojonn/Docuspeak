@@ -1,7 +1,16 @@
 <center>
 
 # DocuSpeak 
+<img width="1564" height="1534" alt="docuspeak" src="https://github.com/user-attachments/assets/13cf5124-7e88-496e-95d3-5979b88d29a4" />
 A premium, distraction-free PDF reading engine for Android featuring High-Fidelity Word Tracking and a Cinematic "Dynamic Island" UI.
+
+## Screenshots
+<img width="720" height="1640" alt="darkmode" src="https://github.com/user-attachments/assets/73ca34ca-a4d1-4cf7-bb9e-18ad3df6c8e3" />
+<img width="720" height="1640" alt="settings" src="https://github.com/user-attachments/assets/0d8265d9-8616-46dc-8d6e-7929828592be" />
+<img width="720" height="1640" alt="readingnow" src="https://github.com/user-attachments/assets/8b32795e-4b56-4e82-9393-6925c4ad3da7" />
+<img width="720" height="1640" alt="pdfviewer" src="https://github.com/user-attachments/assets/ca462415-3afe-4c8b-89df-0bced386f3ed" />
+<img width="720" height="1640" alt="lighmode" src="https://github.com/user-attachments/assets/a418df71-6fc6-474c-89f5-17c793cd0aec" />
+
 
 ## Features ✨
 *   **Geometric Word Tracking**: An indestructible blue highlight that maps the Text-to-Speech audio exactly to the physical PDF coordinates, regardless of the page's scale or dimensions.
@@ -24,4 +33,5 @@ Maintained by [Hirojonn](https://github.com/Hirojonn).
 
 ## License
 MIT License. Feel free to fork and build upon this reading engine!
+
 </center>
