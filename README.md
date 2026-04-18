@@ -53,8 +53,6 @@ Maintained by [Hirojonn](https://github.com/Hirojonn)
 
 ---
 
----
-
 <div align="center">
 
 ## 📄 License  
