@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- pptxjs styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pptxjs@1.21.1/css/pptxjs.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pptxjs@1.21.1/css/nv.d3.min.css">
+    <style>
+        body { margin: 0; padding: 0; background: #e0e0e0; }
+        #result { width: 100%; min-height: 100vh; overflow-x: hidden; }
+        .slide { width: 100% !important; height: auto !important; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+    </style>
+</head>
+<body>
+    <div id="result"></div>
+    
+    <!-- Dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/filereader.js/0.9.3/filereader.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nv.d3/1.8.6/nv.d3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pptxjs@1.21.1/js/pptxjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/divs2slides/1.2.9/divs2slides.min.js"></script>
+
+    <script>
+        function loadFromAndroid() {
+            try {
+                var base64Data = Android.getPptxBase64();
+                if(base64Data) {
+                    loadPptxBase64(base64Data);
+                }
+            } catch(e) {
+                console.error("Error loading base64: " + e);
+            }
+        }
+
+        function loadPptxBase64(base64Data) {
+            $("#result").empty();
+            
+            // Convert base64 to Blob
+            var binary = window.atob(base64Data);
+            var format = 'application/vnd.openxmlformats-officedocument.presentationml.presentation';
+            var array = new Uint8Array(binary.length);
+            for(var i = 0; i < binary.length; i++) {
+                array[i] = binary.charCodeAt(i);
+            }
+            var blob = new Blob([array], {type: format});
+            var fileUrl = URL.createObjectURL(blob);
+
+            // Render
+            $("#result").pptxToHtml({
+                pptxFileUrl: fileUrl,
+                slideMode: false,
+                keyBoardShortCut: false
+            });
+        }
+    </script>
+</body>
+</html>

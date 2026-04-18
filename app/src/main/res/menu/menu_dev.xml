@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <!-- Info Section -->
+    <item
+        android:id="@+id/menu_developer"
+        android:title="Developer: Jonn"
+        android:enabled="false" />
+    <item
+        android:id="@+id/menu_version"
+        android:title="Version 1.0.2"
+        android:enabled="false" />
+
+    <!-- Theme Section -->
+    <item
+        android:id="@+id/menu_theme"
+        android:title="Theme Appearance">
+        <menu>
+            <item
+                android:id="@+id/theme_light"
+                android:title="Light Mode" />
+            <item
+                android:id="@+id/theme_dark"
+                android:title="Dark Mode" />
+            <item
+                android:id="@+id/theme_system"
+                android:title="System Default" />
+        </menu>
+    </item>
+    
+    <item
+        android:id="@+id/menu_voice"
+        android:title="TTS Voices" />
+
+    <group android:id="@+id/group_socials">
+        <item
+            android:id="@+id/menu_github"
+            android:title="GitHub Repository"
+            android:icon="@drawable/icons8_github_32" />
+    </group>
+</menu>

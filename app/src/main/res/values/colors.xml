@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- App Specific Theme Colors -->
+    <color name="dark_bg">#0F0F1A</color>
+    <color name="light_bg">#F5F5FA</color>
+    <color name="card_dark">#1A1A2E</color>
+    <color name="card_light">#FFFFFF</color>
+    <color name="status_text_dark">#9090B0</color>
+    <color name="status_text_light">#606080</color>
+
+    <!-- Glassmorphic Overlay Colors (85% Opacity) -->
+    <color name="card_dark_glass">#D91A1A2E</color>
+    <color name="card_light_glass">#D9FFFFFF</color>
+</resources>

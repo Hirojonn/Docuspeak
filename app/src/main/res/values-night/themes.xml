@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Dark Theme -->
+    <style name="Theme.DocuSpeak" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="android:windowBackground">@color/dark_bg</item>
+        <item name="cardBackgroundColor">@color/card_dark_glass</item>
+        <item name="colorSurface">@color/card_dark_glass</item>
+        <item name="colorOnSurface">#FFFFFF</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="colorPrimary">#7B61FF</item>
+    </style>
+</resources>

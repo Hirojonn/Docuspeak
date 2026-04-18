@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DocuSpeak</string>
+    <string name="open_file">Open File</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="stop">Stop</string>
+</resources>
