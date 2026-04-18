@@ -1,4 +1,6 @@
-# DocuSpeak 🎙️📄
+<center>
+
+<img width="703" height="301" alt="image" src="https://github.com/user-attachments/assets/ae72e22c-5be9-4e28-b102-d23910011dbe" /># DocuSpeak 
 A premium, distraction-free PDF reading engine for Android featuring High-Fidelity Word Tracking and a Cinematic "Dynamic Island" UI.
 
 ## Features ✨
@@ -17,19 +19,9 @@ DocuSpeak utilizes a completely custom, bottom-heavy control scheme featuring hi
 *   **Audio Engine**: `TextToSpeech` with real-time `UtteranceProgressListener` linked directly to UI Coordinate Mapping.
 *   **UI Framework**: Material Design 3.
 
-## How to Build Locally 🚀
-This repository includes a convenient PowerShell build script. You must have Java & PowerShell installed.
-
-1. Clone the repository.
-2. Open PowerShell in the project directory.
-3. Run the automated build script:
-```powershell
-.\build_app.ps1
-```
-4. Find your generated APK at `app/build/outputs/apk/debug/app-debug.apk`.
-
 ## Author
 Maintained by [Hirojonn](https://github.com/Hirojonn).
 
 ## License
 MIT License. Feel free to fork and build upon this reading engine!
+</center>
