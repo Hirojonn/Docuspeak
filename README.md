@@ -1,6 +1,6 @@
 <center>
 
-<img width="703" height="301" alt="image" src="https://github.com/user-attachments/assets/ae72e22c-5be9-4e28-b102-d23910011dbe" /># DocuSpeak 
+# DocuSpeak 
 A premium, distraction-free PDF reading engine for Android featuring High-Fidelity Word Tracking and a Cinematic "Dynamic Island" UI.
 
 ## Features ✨
