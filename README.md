@@ -21,18 +21,6 @@ Featuring an iPhone-inspired UI and a zero-config AI architecture.
 <img src="https://github.com/user-attachments/assets/a418df71-6fc6-474c-89f5-17c793cd0aec" width="180"/>
 
 </div>
-
----
-
-## What’s New in v1.7.0 🚀
-DocuSpeak has been completely re-engineered from a fragile multi-provider setup into a stable, high-end productivity engine.
-
-*   **Pure Free AI Architecture**: Zero API keys required. Powered by a stable, keyless Pollinations AI integration, allowing for professional document chat out of the box.
-*   **iPhone "Dynamic Island" UI**: Experience fluid, organic loading states with our custom "Island" pill—featuring bouncy spring-physics instead of static bars.
-*   **iMessage-Style Chat**: A redesigned AI interface featuring iconic blue and gray bubbles with signature tails, high-contrast typing, and a floating pill input area.
-*   **Immersive Edge-to-Edge**: PDF content flows beautifully behind translucent system bars, utilizing the full screen real estate.
-*   **Reading Persistence**: The app remembers exactly where you left off. Automatically re-opens the last PDF and scrolls to your last-read or bookmarked page.
-
 ---
 
 ## Core Features ✨
