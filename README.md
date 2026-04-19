@@ -1,13 +1,19 @@
 <div align="center">
 
-# DocuSpeak AI v1.7.0 🎙️📄✨
+# 📄 DocuSpeak
 
 <img src="https://github.com/user-attachments/assets/13cf5124-7e88-496e-95d3-5979b88d29a4" width="300"/>
 
-### The Pure Free AI PDF Reader.
+### The Pure Free AI PDF Reader  
 Featuring an iPhone-inspired UI and a zero-config AI architecture.
 
 </div>
+
+---
+
+## 🚀 About
+**DocuSpeak** is a modern Android PDF reader built for **focus, fluidity, and intelligence**.  
+It transforms traditional PDF reading into a **smooth, scroll-based experience** with integrated AI and TTS capabilities.
 
 ---
 
@@ -15,42 +21,49 @@ Featuring an iPhone-inspired UI and a zero-config AI architecture.
 
 <div align="center">
 
-<img src="https://github.com/user-attachments/assets/73ca34ca-a4d1-4cf7-bb9e-18ad3df6c8e3" width="180"/>
-<img src="https://github.com/user-attachments/assets/0d8265d9-8616-46dc-8d6e-7929828592be" width="180"/>
-<img src="https://github.com/user-attachments/assets/ca462415-3afe-4c8b-89df-0bced386f3ed" width="180"/>
-<img src="https://github.com/user-attachments/assets/a418df71-6fc6-474c-89f5-17c793cd0aec" width="180"/>
+<img width="220" src="https://github.com/user-attachments/assets/806b9ee2-590b-4fe1-b445-5a2c2248040e" />
+<img width="220" src="https://github.com/user-attachments/assets/7d6411b5-f36d-4a41-a6a9-5e381ee54ced" />
+<img width="220" src="https://github.com/user-attachments/assets/362d3b89-7cf9-407f-8e25-9ddf5f16e66b" />
+
+<br/>
+
+<img width="220" src="https://github.com/user-attachments/assets/18332feb-526f-4533-80be-e1248ad9acd5" />
+<img width="220" src="https://github.com/user-attachments/assets/59c9d917-e5f0-452a-9b63-c90200426177" />
 
 </div>
 
 ---
 
-## Core Features ✨
-*   **Indestructible Bookmark System**: Save and remove bookmarks with a single tap. The TTS engine intelligently resumes reading from your saved point.
-*   **Long-Strip Vertical View**: No more rigid page flipping. Read PDFs like a modern webpage with a continuous, smooth vertical scroll.
-*   **Geometric Page Numbering**: Real-time "Page X" indicators baked directly into the document view as you scroll.
-*   **Glassmorphic Aesthetic**: Deep translucent backgrounds, subtle borders, and iOS-style micro-animations.
+## ✨ Core Features
+
+- 🔖 **Indestructible Bookmark System**  
+  Save and remove bookmarks instantly. TTS resumes exactly where you left off.
+
+- 📜 **Long-Strip Vertical View**  
+  Read PDFs like a modern webpage with smooth, continuous scrolling.
+
+- 🔢 **Geometric Page Numbering**  
+  Real-time page indicators embedded directly into the reading flow.
+
+- 🎨 **Glassmorphic UI**  
+  Translucent layers, soft blur effects, and iOS-inspired micro-interactions.
+
+- 🤖 **AI Integration**  
+  Built-in AI engine for enhanced reading and interaction.
 
 ---
 
-## Technical Stack 🛠️
-*   **Language**: Kotlin (Android SDK 34)
-*   **Physics Engine**: `androidx.dynamicanimation` for elastic, spring-based UI transitions.
-*   **AI Engine**: Pollinations AI (Keyless primary) / G4F fallback support.
-*   **PDF Engine**: `PDFBox-Android` optimized for vertical long-strip rendering.
-*   **UI Framework**: Material Design 3 with custom Glassmorphing.
+## 🛠️ Technical Stack
+
+- **Language**: Kotlin (Android SDK 34)  
+- **UI Framework**: Material Design 3 + Custom Glassmorphism  
+- **PDF Engine**: PDFBox-Android (optimized for vertical rendering)  
+- **Animation Engine**: `androidx.dynamicanimation`  
+- **AI Engine**: Pollinations AI (Primary) / G4F (Fallback)  
 
 ---
 
-## Author
-Maintained by [Hirojonn](https://github.com/Hirojonn).
+## ⚙️ Installation
 
----
-
-<div align="center">
-
-## 📄 License  
-
-MIT License  
-Feel free to fork and build upon this reading engine!
-
-</div>
+```bash
+git clone https://github.com/Hirojonn/DocuSpeak.git
