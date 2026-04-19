@@ -1,6 +1,6 @@
 <div align="center">
 
-# DocuSpeak AI v1.7.0 🎙️📄✨
+# DocuSpeak AI
 
 <img src="https://github.com/user-attachments/assets/13cf5124-7e88-496e-95d3-5979b88d29a4" width="300"/>
 
@@ -24,7 +24,7 @@ Featuring an iPhone-inspired UI and a zero-config AI architecture.
 
 ---
 
-## What’s New in v1.7.0 (The Rescue) 🚀
+## What’s New in v1.7.0 🚀
 DocuSpeak has been completely re-engineered from a fragile multi-provider setup into a stable, high-end productivity engine.
 
 *   **Pure Free AI Architecture**: Zero API keys required. Powered by a stable, keyless Pollinations AI integration, allowing for professional document chat out of the box.
