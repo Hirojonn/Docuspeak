@@ -21,6 +21,7 @@ Featuring an iPhone-inspired UI and a zero-config AI architecture.
 <img src="https://github.com/user-attachments/assets/a418df71-6fc6-474c-89f5-17c793cd0aec" width="180"/>
 
 </div>
+---
 ## Core Features ✨
 *   **Indestructible Bookmark System**: Save and remove bookmarks with a single tap. The TTS engine intelligently resumes reading from your saved point.
 *   **Long-Strip Vertical View**: No more rigid page flipping. Read PDFs like a modern webpage with a continuous, smooth vertical scroll.
