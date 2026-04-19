@@ -66,11 +66,12 @@ if (Test-Path $apkPath) {
     Write-Host "============================"
     Write-Host "APK built exactly at: $apkPath"
     Write-Host "Installing APK onto connected device..."
-    $adb = "C:\platform-tools\adb.exe"
-    & $adb install -r $apkPath
+    $adb = Join-Path $androidHome "platform-tools\adb.exe"
+    & "$adb" install -r $apkPath
     Write-Host "Launching App..."
-    & $adb shell monkey -p com.example.docuspeak -c android.intent.category.LAUNCHER 1
+    & "$adb" shell monkey -p com.example.docuspeak -c android.intent.category.LAUNCHER 1
     Write-Host "============================"
+
     Write-Host "SUCCESS! The app is successfully installed and running on your device."
 } else {
     Write-Host "Failed to find the built APK."

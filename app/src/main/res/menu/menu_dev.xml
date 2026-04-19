@@ -9,7 +9,7 @@
         android:enabled="false" />
     <item
         android:id="@+id/menu_version"
-        android:title="Version 1.0.2"
+        android:title="Version 1.7.0"
         android:enabled="false" />
 
     <!-- Theme Section -->

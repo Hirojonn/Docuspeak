@@ -1,246 +1,316 @@
-<androidx.constraintlayout.widget.ConstraintLayout
+<androidx.drawerlayout.widget.DrawerLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:animateLayoutChanges="true"
-    android:background="?android:attr/windowBackground">
+    tools:openDrawer="end">
 
-    <!-- Floating Top App Bar (Island Restoration) -->
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/appBarCard"
-        android:layout_width="0dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        app:cardBackgroundColor="?attr/cardBackgroundColor"
-        app:cardCornerRadius="32dp"
-        app:cardElevation="16dp"
-        app:cardPreventCornerOverlap="false"
-        app:cardUseCompatPadding="false"
-        app:strokeWidth="0dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:background="?android:attr/windowBackground">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <!-- Progress Indicator at the TOP edge to avoid bottom-line bug -->
-            <com.google.android.material.progressindicator.LinearProgressIndicator
-                android:id="@+id/progressBar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:visibility="gone"
-                android:indeterminate="true"
-                app:indicatorColor="#7B61FF"
-                app:trackThickness="0dp"
-                app:trackColor="@android:color/transparent"
-                app:layout_constraintTop_toTopOf="parent" />
+        <!-- Floating Top App Bar (Island Restoration) -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/appBarCard"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:cardBackgroundColor="?attr/cardBackgroundColor"
+            app:cardCornerRadius="32dp"
+            app:cardElevation="16dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="false"
+            app:strokeWidth="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Progress Indicator at the TOP edge to avoid bottom-line bug -->
+                <com.google.android.material.progressindicator.LinearProgressIndicator
+                    android:id="@+id/progressBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:indeterminate="true"
+                    app:indicatorColor="#7B61FF"
+                    app:trackThickness="0dp"
+                    app:trackColor="@android:color/transparent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="16dp">
+
+                    <TextView
+                        android:id="@+id/tvLogo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DocuSpeak"
+                        android:textColor="?android:attr/textColor"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/btnBookmark"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginEnd="12dp"
+                        android:src="@drawable/ic_bookmark"
+                        android:tint="?attr/colorOnSurface"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:padding="4dp"
+                        app:layout_constraintEnd_toStartOf="@id/btnChat"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/btnChat"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginEnd="12dp"
+                        android:src="@drawable/ic_chat"
+                        android:tint="?attr/colorOnSurface"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:padding="2dp"
+                        app:layout_constraintEnd_toStartOf="@id/btnOptions"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/btnOptions"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/icons8_option_32"
+                        android:tint="?attr/colorOnSurface"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:scaleType="centerInside"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- iPhone Dynamic Island (Loading/Welcome) -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/welcomeBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            app:cardBackgroundColor="#EE0D0D0D"
+            app:cardCornerRadius="48dp"
+            app:cardElevation="24dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true"
+            app:strokeWidth="1.5dp"
+            app:strokeColor="#1AFFFFFF"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
                 android:paddingStart="24dp"
-                android:paddingEnd="20dp">
+                android:paddingEnd="32dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp">
+
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:id="@+id/loadingSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:indeterminate="true"
+                    android:visibility="gone"
+                    app:indicatorColor="#7B61FF"
+                    app:indicatorSize="32dp"
+                    app:trackThickness="4dp" />
+
+                <TextView
+                    android:id="@+id/tvStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Open a file to start"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:gravity="start"
+                    android:letterSpacing="0.01" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Document View Area -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:clipToPadding="false"
+            android:paddingTop="96dp"
+            android:paddingBottom="120dp"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Highlighter Subtitle Panel -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/readerPanel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:cardBackgroundColor="?attr/cardBackgroundColor"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="12dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="false"
+            app:strokeWidth="0dp"
+            app:layout_constraintBottom_toTopOf="@id/bottomBarCard"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="DocuSpeak"
+                    android:text="Reading Now"
+                    android:textSize="9sp"
+                    android:textAllCaps="true"
+                    android:textColor="#7B61FF"
+                    android:letterSpacing="0.1"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:id="@+id/tvHighlighter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="..."
                     android:textColor="?android:attr/textColor"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:lineHeight="20sp"
+                    android:fontFamily="sans-serif-medium" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Perfectly Aligned Floating Bottom Bar -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/bottomBarCard"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="32dp"
+            app:cardBackgroundColor="?attr/cardBackgroundColor"
+            app:cardCornerRadius="32dp"
+            app:cardElevation="16dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="false"
+            app:strokeWidth="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp">
+
+                <!-- Horizontal Chain for Equal Spacing -->
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnOpenFile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icons8_file_32"
+                    app:backgroundTint="#7B61FF"
+                    app:tint="#FFFFFF"
+                    app:fabSize="mini"
+                    app:elevation="0dp"
                     app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/btnPlayTts"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_chainStyle="spread" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnPlayTts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icons8_play_32"
+                    app:backgroundTint="#7B61FF"
+                    app:tint="#FFFFFF"
+                    app:fabSize="mini"
+                    app:elevation="0dp"
+                    app:layout_constraintStart_toEndOf="@id/btnOpenFile"
+                    app:layout_constraintEnd_toStartOf="@id/btnPauseTts"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent" />
 
-                <ImageView
-                    android:id="@+id/btnOptions"
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:src="@drawable/icons8_option_32"
-                    android:tint="?attr/colorOnSurface"
-                    android:background="?attr/selectableItemBackgroundBorderless"
-                    android:scaleType="centerInside"
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnPauseTts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icons8_pause_32"
+                    app:backgroundTint="#3A3A55"
+                    app:tint="#FFFFFF"
+                    app:fabSize="mini"
+                    app:elevation="0dp"
+                    app:layout_constraintStart_toEndOf="@id/btnPlayTts"
+                    app:layout_constraintEnd_toStartOf="@id/btnStopTts"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnStopTts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icons8_stop_32"
+                    app:backgroundTint="#3A3A55"
+                    app:tint="#FFFFFF"
+                    app:fabSize="mini"
+                    app:elevation="0dp"
+                    app:layout_constraintStart_toEndOf="@id/btnPauseTts"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </com.google.android.material.card.MaterialCardView>
+        </com.google.android.material.card.MaterialCardView>
 
-    <!-- Floating Status Area (Restored to Floating) -->
-    <LinearLayout
-        android:id="@+id/statusArea"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginTop="4dp"
-        android:orientation="vertical"
-        android:background="@android:color/transparent"
-        app:layout_constraintTop_toBottomOf="@id/appBarCard"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <TextView
-            android:id="@+id/tvStatus"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Open a file to start"
-            android:textColor="#9090B0"
-            android:textSize="11sp" />
-    </LinearLayout>
+    <!-- Side Panel (Chatbot) -->
+    <include layout="@layout/panel_chat" />
 
-    <!-- Document View Area -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:clipToPadding="false"
-        android:paddingTop="96dp"
-        android:paddingBottom="120dp"
-        android:visibility="gone"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.drawerlayout.widget.DrawerLayout>
 
-    <!-- Highlighter Subtitle Panel -->
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/readerPanel"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:visibility="gone"
-        app:cardBackgroundColor="?attr/cardBackgroundColor"
-        app:cardCornerRadius="16dp"
-        app:cardElevation="12dp"
-        app:cardPreventCornerOverlap="false"
-        app:cardUseCompatPadding="false"
-        app:strokeWidth="0dp"
-        app:layout_constraintBottom_toTopOf="@id/bottomBarCard"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="12dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="12dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Reading Now"
-                android:textSize="9sp"
-                android:textAllCaps="true"
-                android:textColor="#7B61FF"
-                android:letterSpacing="0.1"
-                android:layout_marginBottom="4dp" />
-
-            <TextView
-                android:id="@+id/tvHighlighter"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="..."
-                android:textColor="?android:attr/textColor"
-                android:textSize="14sp"
-                android:lineHeight="20sp"
-                android:fontFamily="sans-serif-medium" />
-        </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
-
-    <!-- Perfectly Aligned Floating Bottom Bar -->
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/bottomBarCard"
-        android:layout_width="0dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="32dp"
-        app:cardBackgroundColor="?attr/cardBackgroundColor"
-        app:cardCornerRadius="32dp"
-        app:cardElevation="16dp"
-        app:cardPreventCornerOverlap="false"
-        app:cardUseCompatPadding="false"
-        app:strokeWidth="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingStart="12dp"
-            android:paddingEnd="12dp">
-
-            <!-- Horizontal Chain for Equal Spacing -->
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/btnOpenFile"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/icons8_file_32"
-                app:backgroundTint="#7B61FF"
-                app:tint="#FFFFFF"
-                app:fabSize="mini"
-                app:elevation="0dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/btnPlayTts"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintHorizontal_chainStyle="spread" />
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/btnPlayTts"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/icons8_play_32"
-                app:backgroundTint="#7B61FF"
-                app:tint="#FFFFFF"
-                app:fabSize="mini"
-                app:elevation="0dp"
-                app:layout_constraintStart_toEndOf="@id/btnOpenFile"
-                app:layout_constraintEnd_toStartOf="@id/btnPauseTts"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent" />
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/btnPauseTts"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/icons8_pause_32"
-                app:backgroundTint="#3A3A55"
-                app:tint="#FFFFFF"
-                app:fabSize="mini"
-                app:elevation="0dp"
-                app:layout_constraintStart_toEndOf="@id/btnPlayTts"
-                app:layout_constraintEnd_toStartOf="@id/btnStopTts"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent" />
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/btnStopTts"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/icons8_stop_32"
-                app:backgroundTint="#3A3A55"
-                app:tint="#FFFFFF"
-                app:fabSize="mini"
-                app:elevation="0dp"
-                app:layout_constraintStart_toEndOf="@id/btnPauseTts"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </com.google.android.material.card.MaterialCardView>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
