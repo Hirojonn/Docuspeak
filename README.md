@@ -62,8 +62,11 @@ It transforms traditional PDF reading into a **smooth, scroll-based experience**
 - **AI Engine**: Pollinations AI (Primary) / G4F (Fallback)  
 
 ---
+<div align="center">
+📄 License
 
-## ⚙️ Installation
+MIT License
 
-```bash
-git clone https://github.com/Hirojonn/DocuSpeak.git
+Feel free to fork, modify, and build upon this project 🚀
+
+</div>
