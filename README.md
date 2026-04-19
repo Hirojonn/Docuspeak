@@ -1,6 +1,6 @@
 <div align="center">
 
-# DocuSpeak AI
+# DocuSpeak AI v1.7.0 🎙️📄✨
 
 <img src="https://github.com/user-attachments/assets/13cf5124-7e88-496e-95d3-5979b88d29a4" width="300"/>
 
@@ -21,7 +21,9 @@ Featuring an iPhone-inspired UI and a zero-config AI architecture.
 <img src="https://github.com/user-attachments/assets/a418df71-6fc6-474c-89f5-17c793cd0aec" width="180"/>
 
 </div>
+
 ---
+
 ## Core Features ✨
 *   **Indestructible Bookmark System**: Save and remove bookmarks with a single tap. The TTS engine intelligently resumes reading from your saved point.
 *   **Long-Strip Vertical View**: No more rigid page flipping. Read PDFs like a modern webpage with a continuous, smooth vertical scroll.
@@ -36,19 +38,6 @@ Featuring an iPhone-inspired UI and a zero-config AI architecture.
 *   **AI Engine**: Pollinations AI (Keyless primary) / G4F fallback support.
 *   **PDF Engine**: `PDFBox-Android` optimized for vertical long-strip rendering.
 *   **UI Framework**: Material Design 3 with custom Glassmorphing.
-
----
-
-## How to Build Locally 🚀
-This repository includes a convenient, one-click PowerShell build script. You must have Java & the Android SDK installed.
-
-1. Clone the repository.
-2. Open PowerShell in the project directory.
-3. Run the automated build script:
-```powershell
-.\build_app.ps1
-```
-4. Your premium APK will be ready at `app/build/outputs/apk/debug/app-debug.apk`.
 
 ---
 
